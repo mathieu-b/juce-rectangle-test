@@ -39,5 +39,5 @@ void RectanglesMatrix::paint (Graphics& g)
 
 void RectanglesMatrix::resized()
 {
-
+    repaint();
 }

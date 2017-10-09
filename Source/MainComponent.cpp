@@ -66,22 +66,11 @@ void MainComponent::paint (Graphics& g)
     g.setColour(juce::Colours::yellow);
     
     g.drawRect(mRectangles->getBounds());
+
+    repaint();
 }
 
 void MainComponent::resized()
 {
     repaint();
 }
-
-#pragma mark - Mouse Listener
-
-void MainComponent::mouseDown(const juce::MouseEvent &event)
-{
-
-}
-
-void MainComponent::timerCallback()
-{
-    
-}
-
