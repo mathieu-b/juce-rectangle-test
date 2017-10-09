@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="z7eqh5" name="juce-rectangle-test" displaySplashScreen="1"
+              reportAppUsage="1" splashScreenColour="Dark" projectType="guiapp"
+              version="1.0.0" bundleIdentifier="com.yourcompany.jucerectangletest"
+              includeBinaryInAppConfig="1" cppLanguageStandard="11" jucerVersion="5.1.2">
+  <MAINGROUP id="h4pdzY" name="juce-rectangle-test">
+    <GROUP id="{B9FCE10D-1A89-472D-D8DD-28F4FE96FBBD}" name="Source">
+      <FILE id="v7vdkn" name="MainApplication.cpp" compile="1" resource="0"
+            file="Source/MainApplication.cpp"/>
+      <FILE id="bMil9k" name="MainApplication.h" compile="0" resource="0"
+            file="Source/MainApplication.h"/>
+      <FILE id="vxUEmJ" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+      <FILE id="Tj2Zvl" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="AOVBRL" name="MainWindow.cpp" compile="1" resource="0" file="Source/MainWindow.cpp"/>
+      <FILE id="USkvTL" name="MainWindow.h" compile="0" resource="0" file="Source/MainWindow.h"/>
+      <FILE id="EslSd5" name="RectanglesMatrix.cpp" compile="1" resource="0"
+            file="Source/RectanglesMatrix.cpp"/>
+      <FILE id="MJG7k4" name="RectanglesMatrix.h" compile="0" resource="0"
+            file="Source/RectanglesMatrix.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="juce-rectangle-test"
+                       headerPath="$(SRCROOT)/../../&#10;$(SRCROOT)/../../Source/"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="juce-rectangle-test"
+                       headerPath="$(SRCROOT)/../../&#10;$(SRCROOT)/../../Source/"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <ANDROIDSTUDIO targetFolder="Builds/Android" androidSDKPath="${user.home}/juce-android-sdk"
+                   androidNDKPath="${user.home}/juce-android-ndk" androidMinimumSDK="23"
+                   androidTheme="@android:style/Theme.NoTitleBar.Fullscreen">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" androidArchitectures="armeabi-v7a" isDebug="1" optimisation="1"
+                       targetName="juce-rectangle-test" headerPath="../../&#10;../../Source"/>
+        <CONFIGURATION name="Release" androidArchitectures="armeabi-v7a" isDebug="0"
+                       optimisation="3" targetName="juce-rectangle-test" headerPath="../../&#10;../../Source"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../JUCE/modules"/>
+      </MODULEPATHS>
+    </ANDROIDSTUDIO>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>
